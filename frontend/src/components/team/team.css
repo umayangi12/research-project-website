@@ -45,3 +45,24 @@ h1 {
   font-size: 16px;
   font-weight: bold;
 }
+
+@media (max-width: 969px){
+    section {
+        padding: 20px 0px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px){
+    .card {
+        flex: 0 0 100%;
+        max-width:100%;
+    }
+}
