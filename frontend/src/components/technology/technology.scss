@@ -1,0 +1,131 @@
+:root {
+  --PrimaryColor: hsl(127, 79%, 24%);
+  --HoverColor: hsl(127, 66%, 15%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 0%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: hsl(0, 2%, 75%);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.about {
+  .secContainer {
+    .title {
+      color: var(--blackColor);
+      line-height: 1.5rem;
+      padding-bottom: 0.5rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .mainContent {
+      gap: 1rem;
+      .singleItem {
+        text-align: center;
+
+        img {
+          width: 100px;
+          border-radius: 50%;
+        }
+        h3 {
+          font-weight: 700;
+          color: var(--blackColor);
+          padding: 0.5rem;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 500;
+          padding-bottom: 0.5rem;
+          color: var(--textColor);
+        }
+      }
+    }
+    .videoCard {
+      margin-top: 2rem;
+      background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.73),
+          rgba(0, 0, 0, 0.609)
+        ),
+        url(../../assets/img/cardbg.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .cardContent {
+        gap: 2rem;
+        padding: 2rem 1rem;
+
+        .cardText {
+          h4 {
+            color: var(--whiteColor);
+            font-weight: 600;
+            padding-bottom: 1rem;
+          }
+           h2 {
+            color: var(--whiteColor);
+            font-weight: 300;
+            padding-bottom: 1rem;
+          }
+          p {
+            color: var(--whiteColor);
+            opacity: 0.7;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+          }
+        }
+      }
+      .cardVideo {
+        border: 2px solid var(--whiteColor);
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+
+        video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .about {
+    .secContainer {
+      .videoCard {
+        .cardContent {
+          gap: 4rem;
+          padding: 4rem 3rem;
+
+          .cardText {
+            h2 {
+              font-size: 2rem;
+            }
+            p {
+              opacity: 0.7;
+              font-size: 15px;
+            }
+          }
+        }
+        .cardContent {
+          grid-template-columns: repeat(2, 1fr) !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    .secContainer {
+      .mainContent {
+        padding: 2.5rem 0;
+      }
+    }
+  }
+}

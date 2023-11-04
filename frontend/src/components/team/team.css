@@ -1,0 +1,47 @@
+.containe {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+} 
+section {
+    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    border-color: hsl(127, 79%, 24%)
+}
+
+
+.supervisor {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
