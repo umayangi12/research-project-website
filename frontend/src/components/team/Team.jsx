@@ -57,7 +57,7 @@ const Team = () => {
             </div>
             <div className="card">
               <img src={mem2} alt="" style={{ width: 250, height: 250 }} />
-              <h3 style={{ fontSize: 25 }}>Surath Arachchi</h3>
+              <h3 style={{ fontSize: 25 }}>Surath Chathuranga</h3>
               <p class="supervisor">Member</p>
               <p>Sri Lanka Institute of Information Technology</p>
               <a href="https://www.linkedin.com/in/surath-chathuranga-arachchi-bbb04a220/">
