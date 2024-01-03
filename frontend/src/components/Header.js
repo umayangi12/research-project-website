@@ -48,7 +48,7 @@ const Header = () => {
               </a>
             </li>
             <li className="navItem">
-              <a href="/" className="navLink">
+              <a href="/blog" className="navLink">
                 Literature Survey
               </a>
             </li>
@@ -59,19 +59,19 @@ const Header = () => {
             </li>
             <li className="navItem">
               <a href="/" className="navLink">
-                Research Problem
+                Problem
               </a>
-            </li> 
+            </li>
             <li className="navItem">
               <a href="/" className="navLink">
-                Research Objectives
+                Objectives
               </a>
             </li>
             <li className="navItem">
               <a href="/" className="navLink">
                 Methodology
               </a>
-            </li>  
+            </li>
             <li className="navItem">
               <a href="/" className="navLink">
                 Downloads
